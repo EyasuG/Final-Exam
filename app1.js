@@ -26,7 +26,7 @@ let Developer1 = new Dev ('Simon', 'Codepartners', 'JavaScript')
 let Developer2 = new Dev ('Eyasu', 'Coursera', 'Python')
 let Developer3 = new Dev ('Kesete', 'CodeFellows', 'Java')
 //Then I will push the new instance to the Dev 
-//Developer.push(Developer1, Developer2, Developer3)
+//Developer.push(Developer1, Developer2, Developer3
 
 Dev.prototype.NewDeveloper = function(){
   for(let i=0; i < Developer.length; i++){
