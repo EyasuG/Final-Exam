@@ -19,13 +19,13 @@ let elHeader = document.createElement('h5')
 elList.appendChild(elHeader)
 let elTh = document.createElement('h5')
 elHeader.appendChild(elTh)
-elTh.innerText = 'Name of Developer'
+//elTh.innerText = 'Name of Developer'
 let elThAcademy = document.createElement('h5')
 elHeader.appendChild(elThAcademy)
-elThAcademy.innerText = 'Coding School'
+//elThAcademy.innerText = 'Coding School'
 let elLanguage = document.createElement('h5')
 elHeader.appendChild(elLanguage)
-elLanguage.innerText = 'Programing Language'
+//elLanguage.innerText = 'Programing Language'
 //Initiating new instances into the array 
 let Developer1 = new Dev ('Simon', 'Codepartners', 'JavaScript')
 let Developer2 = new Dev ('Eyasu', 'Coursera', 'Python')
@@ -41,9 +41,10 @@ Dev.prototype.NewDeveloper = function(){
    elThAcademy.appendChild(listofacademy)
    let programLang = document.createElement('ul')
    elLanguage.appendChild(programLang)
-   NewDeveloperName.innerText=Developer[i].NameofDeveloper
-   listofacademy.innerText=Developer[i].NameofSchool
-   programLang.innerText=Developer[i].ProgLanguage
+  //  NewDeveloperName.innerText=Developer[i].NameofDeveloper
+  //  listofacademy.innerText=Developer[i].NameofSchool
+  //  programLang.innerText=Developer[i].ProgLanguage
+   NewDeveloperName.innerText = '  Name: ' + Developer[i].NameofDeveloper + ',       ' +  '      codding School:    ' + Developer[i].NameofSchool + ' ,      ' + '       ' + '    Prog. language:   ' + Developer[i].ProgLanguage + ','
  }
 }
 
@@ -58,6 +59,6 @@ elform.addEventListener('submit', function(event){
  let newDeveloper = new Dev(elNameofDeveloper.value, elNameofSchool.value, elNewLanguage.value)
  Developer.push(newDeveloper)
  newDeveloper.NewDeveloper()
- 
+ //Setting LOcal Storage 
  localStorage.setItem('backup',JSON.stringify(Developer))
 } )
